@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createTable (row, col) {
+            document.write('<table align="center" border="1" cellspacing="1" cellpadding="1">');
+            //Tên bảng
+            var name_table = prompt("Mời bạn nhập tên bảng");
+            document.write('<tr><td style="padding:10px" colspan="10"  bgcolor="green" align="center">'+name_table+'</td></tr>');
+            //Nội dung bảng
+            for(var i = 1; i<=row; i++) {
+                document.write("<tr>");
+                for(var j= 1; j<=col; j++) {
+                    var content = prompt("Mời bạn nhập nội dung của hàng "+i+" cột "+j);
+                    document.write("<td style='padding:10px'>" + content+ "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write('</table>');
+        }
+        var row = prompt("Mời bạn nhập số dòng của bảng của cột muốn tạo");
+        var col = prompt("Mời bạn nhập số cột của bảng muốn tạo");
+        createTable(row, col);
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function createArr(a) {
+            var arr = new Array();
+            while (a != 0) {
+                arr.push(a);
+                a = prompt("Vui lòng nhập phần tử mảng");
+            }
+            return "Mảng vừa nhập là: "+arr;
+        }
+        var a = prompt("Vui lòng nhập phần tử mảng");
+        alert(createArr(a));
+    </script>
+</body>
+
+</html>
